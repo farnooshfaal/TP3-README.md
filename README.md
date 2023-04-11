@@ -14,3 +14,7 @@ Top Left – Allows the user to see the Progression of theft counts with the asc
 The purpose of this dashboard indicator is to help users understand whether there is a relationship between income and theft in the areas displayed on the map.  If the graph shows a clear trend of increased theft counts as average income decreases,this could suggest that poverty and crime are correlated in the area.
 
 ![Picture1](https://user-images.githubusercontent.com/55294090/231171336-cc36bf6b-90be-4f81-99ca-5e268ae98e26.png)
+
+Bottom Left – Allows the user to see the average income between all census tracts within the map extent in relation to the census tracts with the highest average income.The purpose of this dashboard indicator is to provide users with a quick overview of the income distribution within the selected area. By comparing the average income of all census tracts to the highest income census tracts, users can gain insights into income inequality and the economic disparities that may exist within the area.
+
+![Picture2](https://user-images.githubusercontent.com/55294090/231174129-6195803c-8584-45d9-8819-f7898a44d0a6.png)
