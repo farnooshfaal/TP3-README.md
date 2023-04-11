@@ -23,3 +23,14 @@ Top and Bottom Right – Gauges to show the averaged thefts for the census tract
 The purpose of these dashboard indicators is to provide users with a quick overview of how theft rates have changed between 2019 and 2020 within the selected area. The gauges allow users to see at a glance whether theft rates have increased, decreased, or remained relatively stable over time.
 
 ![Picture3](https://user-images.githubusercontent.com/55294090/231175975-cc89b981-5de7-439a-a5cf-053d6ce90bee.png)
+
+
+Experience widgets: 
+Map widget showing Web Scene visualizing census tracks by extruding attribute value (average income) to show proportions of average income differences across the neighbourhood with clickable census blocks showing pop-ups detailing individual census tract average income and thefts in 2019 and 2020, respectively. 
+You can swap between the 3d average income map and the 2d crime difference ratio map and an animation between the two with the legend swapping as well can give the user a better spatial sense of the crime increases, decreases, totals and averages while interacting with the dashboard maps, gauges and indicators. 
+
+The blueprint and makeup of this dashboard can be relevant to global cities with similar crime and income rates, as it provides a comprehensive and interactive way of exploring the relationship between these two variables. By using a combination of maps, gauges, and indicators, this dashboard enables users to easily compare and contrast theft rates across different census tracts and time periods, while also providing insights into the socioeconomic factors that may be driving these trends.
+
+Furthermore, the map widget in this dashboard utilizes a vector basemap for building outlines and raster basemap imagery with transparent vector census data, which allows for a more accurate and detailed representation of the neighborhood. This approach can be applied to other global cities with similar characteristics, providing a useful tool for policymakers, law enforcement, and community leaders to understand crime patterns and develop targeted interventions.
+
+https://experience.arcgis.com/experience/f2bd59e3e05b4fae8ee8f686e85af04b
