@@ -1,8 +1,14 @@
 # TP3-README.md
 
-Nous avons transformé les données brutes dans un format shapefile en utilisant la plateforme d'intégration FME (Feature Manipulation Engine) afin d'ajouter des données au tableau de bord. Pour transformer les données dans le format approprié et s'assurer qu'elles sont conformes aux exigences d'exactitude, d'exhaustivité et de qualité, nous avons construit un écrivain dans FME.
+Exportation et traitement des données :
+1. Appliquez un écrivain dans FME pour exporter les couches d'entrée transformées (données sur le revenu, sections de recensement, quartiers dans un fichier de formes polygonal contenant le revenu moyen et les taux de vol criminel par secteur de recensement en 2019 et 2020.
+2. Connectez-vous au compte ArcGIS Onllne de l'organisation via ArcGIS Pro - ajoutez un fichier de formes à la table des matières, partagez la couche de fichiers de formes en tant que service d'entités et chargez-la sur ArcGIS Online
+3. Créer une nouvelle carte, tableau de bord, WebScene, WebExperience
+4. Ajoutez des services d'entités à la carte Web et configurez les fenêtres contextuelles et les étiquettes, la symbologie.
+5. Ajouter une carte Web au tableau de bord et configurer la matrice et les jauges de nuages de points, les indicateurs pour filtrer l'étendue de la carte
+6. Ajoutez une couche d'entités hébergée du fichier de formes au WebScene et configurez la symbologie et les fenêtres contextuelles comme la carte Web
+7. Ajoutez les éléments Web Scene, Web Map et Dashboard à WebExperience et configurez la mise en page
 
-Nous avons importé les données dans le tableau de bord une fois qu'elles étaient au bon format. Cela a été accompli en utilisant la fonction d'importation, qui permet aux utilisateurs d'utiliser des données de différents formats de fichiers, tels que CSV ou shapefile, dans le tableau de bord.
 
 Utilisations du widget et objectif de l'expérience :
 
