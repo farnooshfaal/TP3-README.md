@@ -18,3 +18,8 @@ The purpose of this dashboard indicator is to help users understand whether ther
 Bottom Left – Allows the user to see the average income between all census tracts within the map extent in relation to the census tracts with the highest average income.The purpose of this dashboard indicator is to provide users with a quick overview of the income distribution within the selected area. By comparing the average income of all census tracts to the highest income census tracts, users can gain insights into income inequality and the economic disparities that may exist within the area.
 
 ![Picture2](https://user-images.githubusercontent.com/55294090/231174129-6195803c-8584-45d9-8819-f7898a44d0a6.png)
+
+Top and Bottom Right – Gauges to show the averaged thefts for the census tracts within the user’s dashboard view extent - compares between 2019 and 2020.
+The purpose of these dashboard indicators is to provide users with a quick overview of how theft rates have changed between 2019 and 2020 within the selected area. The gauges allow users to see at a glance whether theft rates have increased, decreased, or remained relatively stable over time.
+
+![Picture3](https://user-images.githubusercontent.com/55294090/231175975-cc89b981-5de7-439a-a5cf-053d6ce90bee.png)
