@@ -1,41 +1,39 @@
 # TP3-README.md
 
-We transformed the raw data into a shapefile format using the integration platform FME (Feature Manipulation Engine) in order to add data to the dashboard. To transform the data into the proper format and make sure it complied with the demands for correctness, completeness, and quality, we built a writer in FME.
+Nous avons transformé les données brutes dans un format shapefile en utilisant la plateforme d'intégration FME (Feature Manipulation Engine) afin d'ajouter des données au tableau de bord. Pour transformer les données dans le format approprié et s'assurer qu'elles sont conformes aux exigences d'exactitude, d'exhaustivité et de qualité, nous avons construit un écrivain dans FME.
 
-We imported the data into the dashboard after it was in the proper format. This was accomplished by utilising the import feature, which enables users to use data from different file formats, such as CSV or shapefile, inside the dashboard.
+Nous avons importé les données dans le tableau de bord une fois qu'elles étaient au bon format. Cela a été accompli en utilisant la fonction d'importation, qui permet aux utilisateurs d'utiliser des données de différents formats de fichiers, tels que CSV ou shapefile, dans le tableau de bord.
 
+Utilisations du widget et objectif de l'expérience :
 
-Widget Uses and Experience Purpose:
+L'Utilisateur utilisera le tableau de bord pour répondre à ses questions concernant :
+1. Les secteurs de recensement contenant les plus grands nombres de crimes en 2019 et 2020
+2. Les secteurs de recensement avec les différences les plus grandes aux plus petites dans les crimes entre les deux années
+3. Les courbes de tendance entre revenu moyen et taux de vol
+4. Calcul de la moyenne de ces variables par le filtre spatial de l'étendue de la carte lorsque l'utilisateur parcourt les secteurs de recensement du quartier
 
-The User will utilize the dashboard to answer their questions related to: 
-1.	The Census Tracts containing the largest counts of crimes in 2019 and 2020
-2.	The Census Tracts with the largest to smallest differences in crimes between the two years
-3.	The trendlines between average income and theft rates
-4.	Averaging these variables by the spatial filter of the map extent as the user pans through the neighbourhood census tracts
+Indicateurs du tableau de bord :
 
-Dashboard Indicators: 
-
-Top Left – Allows the user to see the Progression of theft counts with the ascending values of average income by census tracts within the map extent.
-The purpose of this dashboard indicator is to help users understand whether there is a relationship between income and theft in the areas displayed on the map.  If the graph shows a clear trend of increased theft counts as average income decreases,this could suggest that poverty and crime are correlated in the area.
+En haut à gauche - Permet à l'utilisateur de voir la progression du nombre de vols avec les valeurs croissantes du revenu moyen par secteurs de recensement dans l'étendue de la carte.
+Le but de cet indicateur de tableau de bord est d'aider les utilisateurs à comprendre s'il existe une relation entre les revenus et le vol dans les zones affichées sur la carte. Si le graphique montre une tendance claire à l'augmentation du nombre de vols à mesure que le revenu moyen diminue, cela pourrait suggérer que la pauvreté et la criminalité sont corrélées dans la région.
 
 ![Picture4](https://user-images.githubusercontent.com/55294090/231183218-8ddeb07a-a853-44cc-a358-3c3c0092ea79.png)
 
-Bottom Left – Allows the user to see the average income between all census tracts within the map extent in relation to the census tracts with the highest average income.The purpose of this dashboard indicator is to provide users with a quick overview of the income distribution within the selected area. By comparing the average income of all census tracts to the highest income census tracts, users can gain insights into income inequality and the economic disparities that may exist within the area.
+En bas à gauche - Permet à l'utilisateur de voir le revenu moyen entre tous les secteurs de recensement dans l'étendue de la carte par rapport aux secteurs de recensement avec le revenu moyen le plus élevé. Le but de cet indicateur de tableau de bord est de fournir aux utilisateurs un aperçu rapide de la répartition des revenus dans la zone sélectionnée. En comparant le revenu moyen de tous les secteurs de recensement aux secteurs de recensement aux revenus les plus élevés, les utilisateurs peuvent avoir un aperçu de l'inégalité des revenus et des disparités économiques qui peuvent exister dans la région.
 
 ![Picture2](https://user-images.githubusercontent.com/55294090/231174129-6195803c-8584-45d9-8819-f7898a44d0a6.png)
 
-Top and Bottom Right – Gauges to show the averaged thefts for the census tracts within the user’s dashboard view extent - compares between 2019 and 2020.
-The purpose of these dashboard indicators is to provide users with a quick overview of how theft rates have changed between 2019 and 2020 within the selected area. The gauges allow users to see at a glance whether theft rates have increased, decreased, or remained relatively stable over time.
+En haut et en bas à droite - Jauges pour afficher les vols moyens pour les secteurs de recensement dans l'étendue de la vue du tableau de bord de l'utilisateur - compare entre 2019 et 2020.
+L'objectif de ces indicateurs de tableau de bord est de fournir aux utilisateurs un aperçu rapide de l'évolution des taux de vol entre 2019 et 2020 au sein de la zone sélectionnée. Les jauges permettent aux utilisateurs de voir en un coup d'œil si les taux de vol ont augmenté, diminué ou sont restés relativement stables au fil du temps.
 
 ![Picture3](https://user-images.githubusercontent.com/55294090/231175975-cc89b981-5de7-439a-a5cf-053d6ce90bee.png)
 
 
-Experience widgets: 
-Map widget showing Web Scene visualizing census tracks by extruding attribute value (average income) to show proportions of average income differences across the neighbourhood with clickable census blocks showing pop-ups detailing individual census tract average income and thefts in 2019 and 2020, respectively. 
-You can swap between the 3d average income map and the 2d crime difference ratio map and an animation between the two with the legend swapping as well can give the user a better spatial sense of the crime increases, decreases, totals and averages while interacting with the dashboard maps, gauges and indicators. 
+Gadgets d'expérience :
+Widget de carte montrant la scène Web visualisant les pistes de recensement en extrudant la valeur d'attribut (revenu moyen) pour montrer les proportions des différences de revenu moyen dans le quartier avec des blocs de recensement cliquables affichant des fenêtres contextuelles détaillant le revenu moyen et les vols des secteurs de recensement individuels en 2019 et 2020, respectivement.
+Vous pouvez basculer entre la carte du revenu moyen 3d et la carte du rapport de différence de criminalité 2d et une animation entre les deux avec l'échange de légende peut également donner à l'utilisateur une meilleure idée spatiale des augmentations, des diminutions, des totaux et des moyennes de la criminalité tout en interagissant avec le cartes de tableau de bord, jauges et indicateurs.
 
-The blueprint and makeup of this dashboard can be relevant to global cities with similar crime and income rates, as it provides a comprehensive and interactive way of exploring the relationship between these two variables. By using a combination of maps, gauges, and indicators, this dashboard enables users to easily compare and contrast theft rates across different census tracts and time periods, while also providing insights into the socioeconomic factors that may be driving these trends.
+Le plan et la composition de ce tableau de bord peuvent être pertinents pour les villes mondiales ayant des taux de criminalité et de revenu similaires, car il fournit un moyen complet et interactif d'explorer la relation entre ces deux variables. En utilisant une combinaison de cartes, de jauges et d'indicateurs, ce tableau de bord permet aux utilisateurs de comparer facilement les taux de vol entre différents secteurs de recensement et périodes, tout en fournissant des informations sur les facteurs socio-économiques qui peuvent être à l'origine de ces tendances.
 
-Furthermore, the map widget in this dashboard utilizes a vector basemap for building outlines and raster basemap imagery with transparent vector census data, which allows for a more accurate and detailed representation of the neighborhood. This approach can be applied to other global cities with similar characteristics, providing a useful tool for policymakers, law enforcement, and community leaders to understand crime patterns and develop targeted interventions.
-
+En outre, le widget de carte de ce tableau de bord utilise un fond de carte vectoriel pour créer des contours et des images de fond de carte raster avec des données de recensement vectorielles transparentes, ce qui permet une représentation plus précise et détaillée du quartier. Cette approche peut être appliquée à d'autres villes mondiales présentant des caractéristiques similaires, fournissant un outil utile aux décideurs politiques, aux forces de l'ordre et aux dirigeants communautaires pour comprendre les schémas de criminalité et développer des interventions ciblées.
 https://experience.arcgis.com/experience/f2bd59e3e05b4fae8ee8f686e85af04b
